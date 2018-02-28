@@ -1,5 +1,6 @@
 from django.contrib import admin
 
-from .models import ContactInformation
+from .models import Contacts, Event
 
-admin.site.register(ContactInformation)
+admin.site.register(Contacts)
+admin.site.register(Event)
