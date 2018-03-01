@@ -32,7 +32,7 @@ class Event(models.Model):
         (EXHIBITION, 'Выставка'),
     )
 
-    name = models.CharField('Полное название', max_length=255)
+    name = models.CharField('Название', max_length=255)
     type = models.CharField('Тип события', choices=TYPE_CHOICES, max_length=255, default=EVENT)
     event_date = models.DateField('Дата события')
     photo = models.ManyToManyField(Photo, related_name='events', related_query_name='event')
@@ -46,3 +46,17 @@ class Event(models.Model):
         verbose_name = _('Event')
         verbose_name_plural = _('Events')
 
+
+class Video(models.Model):
+    name = models.CharField('Название', max_length=255)
+    youtube_link = models.CharField('Ссылка на youtube.com', max_length=255,
+                            help_text="Под видео выберите опцию 'ПОДЕЛИТЬСЯ', затем 'ВСТРОИТЬ' и скопируйте ссылку")
+    date_add = models.DateTimeField('Дата добавления', auto_now_add=True)
+    date_upd = models.DateTimeField('Дата обновления', auto_now=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = _('Video')
+        verbose_name_plural = _('Videos')
