@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-28 19:29+0200\n"
+"POT-Creation-Date: 2018-03-01 10:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,18 +24,30 @@ msgstr ""
 msgid "Backoffice"
 msgstr "Панель администратора"
 
-#: backoffice/models.py:21
+#: backoffice/models.py:22
 msgid "Contact"
 msgstr "Контактная информация"
 
-#: backoffice/models.py:22
+#: backoffice/models.py:23
 msgid "Contacts"
 msgstr "Контактная информация"
 
-#: backoffice/models.py:45
+#: backoffice/models.py:46
 msgid "Event"
 msgstr "Мероприятие"
 
-#: backoffice/models.py:46
+#: backoffice/models.py:47
 msgid "Events"
 msgstr "Мероприятия"
+
+#: media_app/apps.py:7
+msgid "Media application"
+msgstr "Медиа файлы"
+
+#: media_app/models.py:14
+msgid "Photo"
+msgstr "Фотография"
+
+#: media_app/models.py:15
+msgid "Photos"
+msgstr "Фотографии"

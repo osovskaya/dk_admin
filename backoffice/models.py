@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from media_app.models import Photo
 
 
 class Contacts(models.Model):
@@ -34,7 +35,7 @@ class Event(models.Model):
     name = models.CharField('Полное название', max_length=255)
     type = models.CharField('Тип события', choices=TYPE_CHOICES, max_length=255, default=EVENT)
     event_date = models.DateField('Дата события')
-    image = models.ImageField('Фото', upload_to='event_photos/%Y/%m/')
+    photo = models.ManyToManyField(Photo, related_name='events', related_query_name='event')
     date_add = models.DateTimeField('Дата добавления', auto_now_add=True)
     date_upd = models.DateTimeField('Дата обновления', auto_now=True)
 
@@ -45,8 +46,3 @@ class Event(models.Model):
         verbose_name = _('Event')
         verbose_name_plural = _('Events')
 
-# python manage.py makemigrations backoffice
-# python manage.py migrate
-
-# django-admin makemessages -l ru
-# django-admin compilemessages

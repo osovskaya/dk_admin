@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'media_app.apps.MediaAppConfig',
     'backoffice.apps.BackofficeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
