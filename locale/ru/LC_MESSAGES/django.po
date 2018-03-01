@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-01 11:39+0200\n"
+"POT-Creation-Date: 2018-03-01 12:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,29 +24,45 @@ msgstr ""
 msgid "Backoffice"
 msgstr "Панель администратора"
 
-#: backoffice/models.py:22
+#: backoffice/models.py:23
 msgid "Contact"
 msgstr "Контактная информация"
 
-#: backoffice/models.py:23
+#: backoffice/models.py:24
 msgid "Contacts"
 msgstr "Контактная информация"
 
-#: backoffice/models.py:46
+#: backoffice/models.py:47
 msgid "Event"
 msgstr "Мероприятие"
 
-#: backoffice/models.py:47
+#: backoffice/models.py:48
 msgid "Events"
 msgstr "Мероприятия"
 
-#: backoffice/models.py:61
+#: backoffice/models.py:62
 msgid "Video"
 msgstr "Видео"
 
-#: backoffice/models.py:62
+#: backoffice/models.py:63
 msgid "Videos"
 msgstr "Видео"
+
+#: backoffice/models.py:75
+msgid "Slider"
+msgstr "Слайдер"
+
+#: backoffice/models.py:76
+msgid "Sliders"
+msgstr "Слайдер"
+
+#: backoffice/models.py:89
+msgid "Person"
+msgstr "Персона"
+
+#: backoffice/models.py:90
+msgid "Persons"
+msgstr "Персоны"
 
 #: media_app/apps.py:7
 msgid "Media application"

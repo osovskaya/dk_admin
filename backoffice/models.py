@@ -66,7 +66,7 @@ class Video(models.Model):
 class Slider(models.Model):
     header = models.CharField('Заголовок', max_length=255)
     description = models.CharField('Описание', max_length=255)
-    image = models.ForeignKey(Photo, on_delete=models.SET_NULL, null=True)
+    image = models.ForeignKey(Photo, on_delete=models.SET_NULL, null=True, verbose_name='Фото')
 
     def __str__(self):
         return self.header
@@ -74,3 +74,17 @@ class Slider(models.Model):
     class Meta:
         verbose_name = _('Slider')
         verbose_name_plural = _('Sliders')
+
+
+class Person(models.Model):
+    name = models.CharField('ФИО', max_length=255)
+    position = models.CharField('Должность', max_length=255)
+    information = models.TextField('Описание')
+    avatar = models.ForeignKey(Photo, on_delete=models.SET_NULL, null=True, verbose_name='Фото')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = _('Person')
+        verbose_name_plural = _('Persons')
