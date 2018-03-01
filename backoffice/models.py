@@ -12,6 +12,7 @@ class Contacts(models.Model):
     street = models.CharField('Улица', max_length=255)
     facebook_link = models.CharField('Ссылка facebook.com', max_length=255, blank=True)
     vkontakte_link = models.CharField('Сслыка vk.com', max_length=255, blank=True)
+    history = models.TextField('История')
     date_add = models.DateTimeField('Дата добавления', auto_now_add=True)
     date_upd = models.DateTimeField('Дата обновления', auto_now=True)
 
@@ -60,3 +61,16 @@ class Video(models.Model):
     class Meta:
         verbose_name = _('Video')
         verbose_name_plural = _('Videos')
+
+
+class Slider(models.Model):
+    header = models.CharField('Заголовок', max_length=255)
+    description = models.CharField('Описание', max_length=255)
+    image = models.ForeignKey(Photo, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.header
+
+    class Meta:
+        verbose_name = _('Slider')
+        verbose_name_plural = _('Sliders')
