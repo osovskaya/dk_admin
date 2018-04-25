@@ -127,4 +127,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = '/home/levko/develop/dk_venv/dk_admin/media/'
-MEDIA_URL = '/media/'
+MEDIA_URL = '/'
