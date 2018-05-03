@@ -17,6 +17,15 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 {% for photo in photos %}
+                {% if forloop.first %}
+                    <div class="item active">
+                        <img src="{{ photo.image.filepath.url }}" alt="{{ photo.header }}" >
+                        <div class="carousel-caption">
+                            <h3>{{ photo.header }}</h3>
+                            <p>{{ photo.description }}</p>
+                        </div>
+                    </div>
+                {% else %}
                     <div class="item">
                         <img src="{{ photo.image.filepath.url }}" alt="{{ photo.header }}" >
                         <div class="carousel-caption">
@@ -24,6 +33,7 @@
                             <p>{{ photo.description }}</p>
                         </div>
                     </div>
+                {% endif %}
                 {% endfor %}
             </div>
             <!-- Left and right controls -->
