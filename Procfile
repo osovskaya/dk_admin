@@ -1,3 +1,2 @@
-web: gunicorn floating-forest-34810
-
+web: gunicorn dk_admin.wsgi
 
