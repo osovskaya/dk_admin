@@ -26,7 +26,7 @@ SECRET_KEY = 'y+9f_pxyi$l*z=0k3_7wy=(qjhp7nsed(5a!^nf!tyz1@+wj1*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1', 'cktad.herokuapp.com']
+ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1', '0.0.0.0', 'cktad.herokuapp.com']
 
 
 # Application definition
