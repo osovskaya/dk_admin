@@ -5,3 +5,15 @@ name = "pypi"
 
 [packages]
 dj-database-url = "*"
+django = "*"
+pillow = "*"
+pytz = "*"
+"psycopg2" = "*"
+"psycopg2-binary" = "*"
+gunicorn = "*"
+whitenoise = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
