@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /mail.php
+Host: viacheslav-levko.zzz.com.ua
+Sitemap: http://viacheslav-levko.zzz.com.ua/sitemap.xml

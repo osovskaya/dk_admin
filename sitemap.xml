@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>http://cktad.herokuapp.com/</loc>
+	<lastmod>2018-08-25T14:48:37+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://cktad.herokuapp.com/persons/</loc>
+	<lastmod>2018-08-25T14:48:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://cktad.herokuapp.com/concerts/</loc>
+	<lastmod>2018-08-25T14:48:38+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://cktad.herokuapp.com/exhibitions/</loc>
+	<lastmod>2018-08-25T14:48:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://cktad.herokuapp.com/videos/</loc>
+	<lastmod>2018-08-25T14:48:39+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://cktad.herokuapp.com/contacts/</loc>
+	<lastmod>2018-08-25T14:48:40+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>
