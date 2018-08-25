@@ -68,7 +68,7 @@ body {
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%;  }
+    background-size: cover;  }
 
 /*main*/
 .link-facebook{
@@ -128,6 +128,7 @@ footer a{
 /*-------------------------------------------------------------------------------------------------------------------  */
 /*about us*/
 .main-text {
+    text-aline: justify ;
     font-size: 16px;
     line-height: 25px; }
 
@@ -136,5 +137,32 @@ footer a{
 /*contact page*/
 .contact-tel{
     margin:4% 0 3% 0;
+
+}
+
+/*-------------------media-----------------------------*/
+@media only screen and (max-width: 1200px) {
+    .container p iframe{
+    width: 100% ;
+    }
+}
+@media only screen and (max-width: 992px) {
+    footer{
+    height: auto;
+    padding: 40px 0 20px 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .container h1,
+    .header-title h1{
+       font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
 
 }
